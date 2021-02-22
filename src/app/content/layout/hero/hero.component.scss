@@ -1,0 +1,60 @@
+@mixin animate($name) {
+//   -webkit-animation: $name 15s infinite;
+//   /* Safari 4+ */
+//   -moz-animation: $name 15s infinite;
+//   /* Fx 5+ */
+//   -o-animation: $name 15s infinite;
+//   /* Opera 12+ */
+  animation: $name 15s infinite alternate backwards;
+  /* IE 10+, Fx 29+ */
+}
+
+.hero {
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    @include animate(heroAnimation)
+  }
+
+  position: relative;
+
+
+  .text {
+    width: 100%;
+    // background-color: red;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    span {
+      font-size: 4rem;
+      line-height: 70px;
+      font-weight: 700;
+    }
+
+    button {
+      width: 160px;
+      height: 40px;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 1.5rem;
+      background-color: #ff5d60;
+      border: none;
+      border-radius: 2px;
+
+      &:hover {
+        background-color: #FE7C7F;
+      }
+    }
+  }
+}
+
+
+@keyframes heroAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.13);
+  }
+}

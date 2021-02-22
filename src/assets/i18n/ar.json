@@ -1,0 +1,17 @@
+{
+    "LOGIN":"تسجيل دخول",
+    "CreateAccount":"انشاء حساب",
+    "Lang":"En",
+    "LoginScreen":"شاشة الدخول",
+    "Username":"اسم المستخدم",
+    "Password":"كلمة السر",
+    "email":"البريد الإلكترونى",
+    "Re-Password":"تأكيد كلمة السر",
+    "TaskDel":"تم حذف المهمة",
+    "SomethingWentWrong":"حدث خطاء ",
+    "DeleteConfimation":"هل أنت متأكد من حذف هذه المهمة ؟",
+    "warning":"تحذير",
+    "Info":"معلومة",
+    "yes":"نعم",
+    "no":"لا"
+}

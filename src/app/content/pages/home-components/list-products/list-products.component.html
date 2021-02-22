@@ -1,0 +1,84 @@
+<div class="wrapper">
+  <div class="filters d-flex justify-content-between">
+    
+    
+    <div class="">
+      <label>MAX PRICE</label>
+      <mat-slider thumbLabel tickInterval="5" min="1" max="100000"></mat-slider>
+    </div>
+    <div>
+      <label>MIN PRICE</label>
+      <mat-slider thumbLabel tickInterval="5" min="1" max="100000"></mat-slider>
+    </div>
+    <mat-form-field appearance="fill">
+      <mat-label>Toppings</mat-label>
+      <mat-select [formControl]="toppings" multiple>
+        <mat-select-trigger>
+          {{ toppings.value ? toppings.value[0] : "" }}
+          <span
+            *ngIf="toppings.value?.length > 1"
+            class="example-additional-selection"
+          >
+            (+{{ toppings.value.length - 1 }}
+            {{ toppings.value?.length === 2 ? "other" : "others" }})
+          </span>
+        </mat-select-trigger>
+        <mat-option *ngFor="let topping of toppingList" [value]="topping">{{
+          topping
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="example-button-container">
+      <button
+        mat-fab
+        color="warn"
+        aria-label="Example icon button with a home icon"
+      >
+        <mat-icon>search</mat-icon>
+      </button>
+    </div>
+    <div class="example-button-container">
+      <button
+        mat-fab
+        color="warn"
+        aria-label="Example icon button with a home icon"
+      >
+        <mat-icon>search_off</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="cards row justify-content-center">
+    <div
+      class="acard col-md-4 p-0 m-0"
+      *ngFor="let i of [1, 2, 3, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]"
+    >
+      <div class="card-head d-flex justify-content-between align-items-center">
+        <mat-icon *ngIf="false">favorite_border</mat-icon>
+        <mat-icon class="infav">favorite</mat-icon>
+        <span class="sale" *ngIf="true">-15 %</span>
+        <div class="isnew">NEW</div>
+      </div>
+      <div class="card-img">
+        <img src="../../../../../assets/images/product_1.png" alt="" />
+      </div>
+      <div class="card-details">
+        <div class="title">Fujifilm X100T 16 MP Digital Camera (Silver)</div>
+        <div class="price d-flex justify-content-center pt-2">
+          <span class="new">$520.00</span>
+          <span class="old" *ngIf="true">$590.00</span>
+        </div>
+      </div>
+      <div class="action d-flex justify-content-center align-items-center">
+        ADD TO CART
+      </div>
+    </div>
+  </div>
+  <div class="paging">
+    <mat-paginator
+      [length]="100"
+      [pageSize]="10"
+      [pageSizeOptions]="[5, 10, 25, 100]"
+    >
+    </mat-paginator>
+  </div>
+</div>

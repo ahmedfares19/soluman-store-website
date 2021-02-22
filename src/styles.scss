@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+/* <style>
+</style> */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~bootstrap/scss/bootstrap';
+@import './assets/responsive-layout';
+@import './../src/assets/imports';
+body {
+  font-size: 10px;
+  transition: all 0.3s;
+  @include Basefont;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+div[lang=en]{
+  direction: ltr
+}
+div[lang=ar]{
+  direction: rtl
+}
+
+.s-font{
+ font-size: 1.4rem !important;
+}
+.m-font{
+  font-size: 5rem !important;
+}
+
+.lg-font{
+  font-size: 2.2rem !important;
+}
+.black{
+  color: #282828 !important;
+}
+.color-hot{
+  color: #FE4C50 !important;
+}
+::-moz-selection { /* Code for Firefox */
+  color: #FE4C50;
+  background: #ffcbcc;
+}
+::selection {
+  color: #FE4C50;
+  background: #ffcbcc;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: hsl(356, 100%, 97%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff6366;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FE4C50;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.dropdown{
+  ul,li{
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  li{
+    // padding:5px 15px !important;
+  }
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}

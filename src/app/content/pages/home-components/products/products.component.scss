@@ -1,0 +1,43 @@
+.holder{
+    position: relative;
+    .text{
+        z-index: 1;
+        font-weight: 800;
+        font-size: 2.5rem;
+        text-shadow: 0px 5px 8px rgba(95, 95, 95, 0.507);
+        animation: move 0.2 infinite alternate;
+    }
+    .separetor{
+        line-height: 0.7rem;
+        border-radius: 5px;
+        font-weight: 900;
+        font-size: 2.5rem;
+        width: 300px;
+        height: 5px;
+        background-color: #fe4c4f;
+        display: block;
+        position: absolute;
+        transform: translateX(-00px);
+        animation: move 3s infinite ;
+        top: 50%;
+        color: #fff;
+        z-index: 0;
+       
+    }
+}
+
+
+@keyframes move{
+    0%{
+        // line-height: 0.2rem;
+        text-shadow: 0px 5px 8px rgba(95, 95, 95, 0.507);
+    }
+    50%{
+        // line-height: 0.7rem;
+        text-shadow: 0px 15px 15px rgba(61, 61, 61, 0.466);
+    }
+    100%{
+        // line-height: 0.2rem;
+        text-shadow: 0px 5px 8px rgba(95, 95, 95, 0.507);
+    }
+}

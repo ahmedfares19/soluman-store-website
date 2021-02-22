@@ -1,0 +1,51 @@
+$grid-breakpoints: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px);
+
+// default
+.wrapper {
+  margin: auto;
+}
+
+@include media-breakpoint-up(sm) {
+  .wrapper {
+    width: 70%;
+  }
+  .nav-not-mobile{
+    display: block;
+  }
+  .nav-mobile{
+    display: none !important;
+  }
+  
+}
+
+@include media-breakpoint-down(sm) {
+  .wrapper {
+    width: 90%;
+
+  }
+  .nav-not-mobile{
+    display: none !important;
+  }
+  .nav-mobile{
+    display: block;
+  }
+  .text{
+    left: 5% !important;
+    top: 15% !important;
+    span{
+      // background-color: red;
+      line-height: 45px !important;
+      font-size: 2rem !important;
+    }
+    button{
+      width: 100px !important;
+      height: 25px !important;
+      font-size: 0.7rem !important;
+    }
+  }
+}

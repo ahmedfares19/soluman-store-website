@@ -1,0 +1,17 @@
+{
+    "LOGIN":"Login",
+    "CreateAccount":"Create Account",
+    "Lang":"ع",
+    "LoginScreen":"Login Screen",
+    "Username":"Username",
+    "Password":"Password",
+    "email":"Email",
+    "Re-Password":"Rewrite Password",
+    "TaskDel":"Task has been deleted",
+    "SomethingWentWrong":"Something went Wrong",
+    "DeleteConfimation":"Are you sure you want to delete the task?",
+    "warning":"Warning",
+    "Info":"Info",
+    "yes":"Yes",
+    "no":"No"
+}
